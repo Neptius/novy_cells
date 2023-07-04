@@ -7,7 +7,7 @@ import 'package:novy_cells/features/number_trivia/domain/entities/number_trivia.
 import '../../../../fixtures/fixture_reader.dart';
 
 void main() {
-  const tNumberTriviaModel = NumberTriviaModel(number: 1, text: 'Test Text');
+  const tNumberTriviaModel = NumberTriviaModel(number: 1, text: 'Test text');
 
   test(
     'should be a subclass of NumberTrivia entity',
@@ -52,7 +52,7 @@ void main() {
         final result = tNumberTriviaModel.toJson();
         // assert
         final expectedMap = {
-          "text": "Test Text",
+          "text": "Test text",
           "number": 1,
         };
         expect(result, equals(expectedMap));
