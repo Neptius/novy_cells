@@ -15,13 +15,11 @@ void main() {
   late MockNumberTriviaRepository mockNumberTriviaRepository;
   late GetRandomNumberTrivia usecase;
   late NumberTrivia tNumberTrivia;
-  late int tNumber;
 
   setUp(() {
     mockNumberTriviaRepository = MockNumberTriviaRepository();
     usecase = GetRandomNumberTrivia(mockNumberTriviaRepository);
     tNumberTrivia = const NumberTrivia(text: 'test', number: 1);
-    tNumber = 1;
   });
 
   test(
